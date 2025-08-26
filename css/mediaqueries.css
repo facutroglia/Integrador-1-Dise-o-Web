@@ -1,98 +1,254 @@
-@media(max-width:992px){
-    body{
 
-    }
-    
+@media (max-width: 992px) {
     .nav-links {
-        display:none;
+        display: none;
         position: absolute;
-        top:65px;
-        left:5%;
+        top: 65px;
+        left: 5%;
         right: 5%;
         width: 90%;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         background-color: #465779;
         border: 2px solid #ccc;
         border-top: 0;
-        border-radius:0 0 15px 15px;
+        border-radius: 0 0 15px 15px;
         padding: 45px 30px;
-        gap:25px;
+        gap: 25px;
         z-index: 2;
-}
-.nav-links a{
-    font-size: 18px;
-}
+    }
 
-.menu-hamburguesa{
-    display: flex;
-    cursor: pointer;
-}
-#menu:checked + .nav-links{
-    display: flex;
-}
-#contrata-ya{
-    display: none;
-}
+    .nav-links a {
+        font-size: 18px;
+    }
 
-/*---------------*/
+    .menu-hamburguesa {
+        display: flex;
+        cursor: pointer;
+    }
 
-header .content{
-    width: 920px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    #menu:checked + .nav-links {
+        display: flex;
+    }
+
+    #contrata-ya {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-top: 50px;
+    }
     
+        header .content {
+        padding-top: 100px;
+    }
+
+
+    .image {
+        display: none;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #beneficios h2 {
+        padding-bottom: 50px;
+    }
+
+    .sub-header {
+        padding-bottom: 50px;
+    }
+
+    .precios {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #btn {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .column {
+        padding-top: 50px;
+    }
 }
 
-.image{
-    display: none;
+
+@media (max-width: 766px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #465779;
+        border: 2px solid #ccc;
+        border-top: 0;
+        border-radius: 0 0 15px 15px;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .image {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+        header .content {
+        padding-top: 100px;
+    }
+
+    header .content h4 {
+        display: none;
+    }
+
+    header .content button {
+        display: none;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #beneficios .header {
+        padding: 50px;
+    }
+
+    .precios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #btn {
+        width: 100%;
+    }
+
+    footer .column {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 }
 
-.beneficios{
-    grid-template-columns: repeat(2, 1fr);
-}
-}
+@media (max-width: 574px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #465779;
+        border: 2px solid #ccc;
+        border-top: 0;
+        border-radius: 0 0 15px 15px;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+    }
 
-@media(max-width:576px){
-    header .content{
-    width: 720px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+    .menu-hamburguesa {
+        display: flex;
+        cursor: pointer;
+    }
 
-section h2{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 720px;
-}
-.beneficios{
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 720px;
-}
-.sub-header{
+    .image {
+        display: none;
+    }
 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 720px;
-    padding-top: 10px;
-    max-width: unset;
-}
+    #menu:checked + .nav-links {
+        display: flex;
+    }
 
-.precios{
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 720px;
-}
-footer{
-    grid-template-columns: 500px repeat(1, 1fr);
-}
+    #ver-mas {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    header .content {
+        padding-top: 100px;
+    }
+
+    header .content h4 {
+        display: none;
+    }
+
+    section h2 {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #beneficios .header {
+        padding: 50px;
+    }
+
+    .sub-header {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .precios {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #btn {
+        width: 100%;
+    }
+
+    footer .column {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 }
